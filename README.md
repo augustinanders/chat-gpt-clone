@@ -1,51 +1,72 @@
-# Getting Started with Create React App
+# React ChatGPT Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based chat interface that interacts with the OpenAI ChatGPT API. Users can have conversations with the model, and the project includes both the frontend and a Node.js server for API communication.
 
-## Available Scripts
+This project is an exercise from this [`Youtube-Course`](https://www.youtube.com/watch?v=uRQH2CFvedY&t=6940s) from [`freecodecamp`](https://github.com/freeCodeCamp) made by [`Ania Kubow`](https://github.com/kubowania).
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start:frontend`
+- **React** - Frontend library for building user interfaces.
+- **Node.js** - Server environment for handling API requests.
+- **Express** - Web framework for building the server.
+- **Cors** - Middleware for handling Cross-Origin Resource Sharing.
+- **dotenv** - Module for loading environment variables from a `.env` file.
+- **OpenAI GPT-3.5 Turbo** - Powerful language model used for generating responses.
+- **Jest** - Testing framework.
+- **Nodemon** - Utility for automatically restarting the server during development.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get started with this project, follow these steps:
 
-### `npm start:backend`
+1. Clone the repository:
 
-Runs the node.js server.
-Open [http://localhost:8000] to view it in your browser.
+      `git clone git@github.com:augustinanders/chat-gpt-clone.git`
 
-### `npm test`
+2. Install project dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+      `npm install`
 
-### `npm run build`
+3. Set up environment variables:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+      Create a `.env` file in the root of the project and add your OpenAI API key like this:
+      
+      `API_KEY = <your-API-key>`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the frontend:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+      `npm run start:frontend` 
+    
+      This will run the React app in development mode and can be accessed at [http://localhost:3000](http://localhost:3000) in your web browser.
 
-### `npm run eject`
+5. Start the backend server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+      `npm run start:backend`
+      
+      This will start the Node.js server, which will be available at [http://localhost:8000](http://localhost:8000).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## My Key Learnings with this project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `Node.js and Express`:
+  Building the Node.js server with Express helped me learn how to set up a simple backend for handling API requests and serving the React frontend.
+- `API Integration`:
+  The project involved integrating with external APIs, in this case, the OpenAI GPT-3.5 Turbo API, which provided valuable experience for working with third-party services.
+- `API Security`:
+  I gained an understanding of the importance of securing my API key and explored various techniques to ensure the security of sensitive information.
+- `Environment Variables with dotenv`:
+  I learned how to manage sensitive information, such as API keys, by using environment variables and the dotenv module to keep this information secure.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Resources
+
+- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) - Learn how to use Create React App to bootstrap your React projects.
+- [React documentation](https://reactjs.org/) - Explore React's official documentation to master React development.
+- [Express.js](https://expressjs.com/) - Dive into Express.js for building web applications with Node.js.
+- [OpenAI GPT-3.5 Turbo](https://beta.openai.com/docs/guides/chat) - Understand how to use OpenAI's ChatGPT API for chat-based applications.
+- [Jest](https://jestjs.io/) - Explore Jest for JavaScript testing.
+- [Nodemon](https://nodemon.io/) - Learn how to use Nodemon to automatically restart your Node.js server during development.
+
+
+
